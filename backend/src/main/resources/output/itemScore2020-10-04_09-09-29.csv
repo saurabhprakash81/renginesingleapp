@@ -1,0 +1,6 @@
+id,itemKey,itemName,department,category,subCategory,itemClass,cost,abandonmentRate,score,adjustedScore,recommended,override
+1,0,0 Linko King Bedsheet,Dept,Category,SubCategory,ItemClass,14,4,2.4,0.0,Y,false
+2,1,1 Linko King Bedsheet,Dept,Category,SubCategory,ItemClass,14,4,2.4,0.0,Y,false
+3,2,2 Linko King Bedsheet,Dept,Category,SubCategory,ItemClass,14,4,2.4,0.0,N,false
+4,3,3 Linko King Bedsheet,Dept,Category,SubCategory,ItemClass,14,4,2.4,0.0,N,false
+5,4,4 Linko King Bedsheet,Dept,Category,SubCategory,ItemClass,14,4,2.4,0.0,N,false

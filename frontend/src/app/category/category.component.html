@@ -1,0 +1,53 @@
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+<h3 _ngcontent-cqh-c82=""> Configure Categories </h3>
+<table width="100%" class="dep-table">
+    <thead>
+    <th class="table-header-cell">
+        Department
+    </th>
+    <th colspan="3" class="table-header-cell">
+        Category
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Sub Category
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Class
+    </th>
+
+    </thead>
+    <tbody>
+        <tbody>
+            <tr *ngFor="let row of rows">
+                <td width="20%" class="dep-table" style="border-right-width: 0px;"><input type="checkbox" class="checkbox_with_margin" [disabled]="row.disabled" [(ngModel)]="row.selected" value="dep_{{row.departmentId}}" name="dep_{{row.departmentId}}" ngModel  (change)="updateValues($event)" >{{row.departmentName}}</td>
+                <td width="80%">
+                    <table width="100%" class="dep-table" style="border-bottom-width: 0px;">
+                        <tr *ngFor="let cat of row.categoryList" >
+                            <td width="20%" class="dep-table" style="border-bottom-width: 0px;"><input type="checkbox" class="checkbox_with_margin" [disabled]="cat.disabled" [(ngModel)]="cat.selected" value="cat_{{cat.categoryId}}" name="cat_{{cat.categoryId}}" ngModel  (change)="updateValues($event)" >{{cat.categoryName}}</td>
+
+                            <td width="80%">
+                                <table width="100%">
+                                    <tr *ngFor="let sub of cat.subCategoriesList">
+                                        <td width="20%" class="dep-table" style="border-left-width: 0px;border-left-width: 0px;border-bottom-width: 0px;"><input type="checkbox" class="checkbox_with_margin" [disabled]="sub.disabled" [(ngModel)]="sub.selected" value="sub_{{sub.subCategoryId}}" name="sub_{{sub.subCategoryId}}" ngModel (change)="updateValues($event)">{{sub.subCategoryName}}</td>
+
+                                        <td width="80%">
+                                            <table width="100%">
+                                                <tr *ngFor="let item of sub.itemClassList">
+                                                    <td class="dep-table" style="border-bottom-width: 0px;border-left-width: 0px;border-right-width: 0px;"><input type="checkbox" class="checkbox_with_margin" [disabled]="item.disabled" [(ngModel)]="item.selected" value="item_{{item.itemClassId}}" name="item_{{item.itemClassId}}" ngModel (change)="updateValues($event)">{{item.itemClassName}}</td>
+                                                </tr>
+                                             </table>
+                                             </td>
+                                    </tr>
+                                 </table>
+                                 </td>
+                        </tr>
+                     </table>
+                     </td>
+            </tr>
+        </tbody>   
+</table>
+
+<div>
+    <button  class="btn btn-primary" type="submit" value="SUBMIT">SUBMIT</button>
+  </div>
+
+</form>

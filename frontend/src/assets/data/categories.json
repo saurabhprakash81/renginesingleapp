@@ -1,0 +1,147 @@
+{
+    "departmentList": [
+        {
+            "departmentId": 1,
+            "departmentName": "Furniture",
+            "selected":false,
+            "categoryList": [
+                {
+                    "categoryId": 1,
+                    "categoryName": "BedRoom",
+                    "selected": true,
+                    "subCategoriesList": [
+                        {
+                            "subCategoryId": 1,
+                            "subCategoryName": "Bed",
+                            "selected": false,
+                            "itemClassList": [
+                                {
+                                    "itemClassId": 1,
+                                    "itemClassName": "WoodFrame",
+                                    "selected": false
+                                },
+                                {
+                                    "itemClassId": 2,
+                                    "itemClassName": "Metal Frame",
+                                    "selected": false
+                                }
+                            ]
+                        },
+                        {
+                            "subCategoryId": 2,
+                            "subCategoryName": "Chest",
+                            "selected": false,
+                            "itemClassList": [
+                                {
+                                    "itemClassId": 3,
+                                    "itemClassName": "With drawer",
+                                    "selected": false
+                                },
+                                {
+                                    "itemClassId": 4,
+                                    "itemClassName": "Without drawer",
+                                    "selected": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": 2,
+                    "categoryName": "Living Room",
+                    "selected": false,
+                    "subCategoriesList": [
+                        {
+                            "subCategoryId": 3,
+                            "subCategoryName": "Sofa",
+                            "selected": true,
+                            "itemClassList": [
+                                {
+                                    "itemClassId": 5,
+                                    "itemClassName": "Sectional",
+                                    "selected": false
+                                },
+                                {
+                                    "itemClassId": 6,
+                                    "itemClassName": "Love Seat",
+                                    "selected": false
+                                }
+                            ]
+                        },
+                        {
+                            "subCategoryId": 4,
+                            "subCategoryName": "Tables",
+                            "selected": true,
+                            "itemClassList": [
+                                {
+                                    "itemClassId": 7,
+                                    "itemClassName": "Coffee table",
+                                    "selected": false
+                                },
+                                {
+                                    "itemClassId": 8,
+                                    "itemClassName": "End Tables",
+                                    "selected": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "departmentId": 2,
+            "departmentName": "Garden",
+            "categoryList": [
+                {
+                    "categoryId": 3,
+                    "categoryName": "Plant",
+                    "selected": false,
+                    "subCategoriesList": [
+                        {
+                            "subCategoryId": 5,
+                            "subCategoryName": "Outdoor Plants",
+                            "selected": false,
+                            "itemClassList": [
+                                {
+                                    "itemClassId": 9,
+                                    "itemClassName": "Perinnials",
+                                    "selected": true
+                                },
+                                {
+                                    "itemClassId": 10,
+                                    "itemClassName": "Seasonals",
+                                    "selected": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": 4,
+                    "categoryName": "Equipemnt",
+                    "selected": false,
+                    "subCategoriesList": [
+                        {
+                            "subCategoryId": 6,
+                            "subCategoryName": "Outdoor Gardening",
+                            "selected": false,
+                            "itemClassList": [
+                                {
+                                    "itemClassId": 11,
+                                    "itemClassName": "Hoses",
+                                    "selected": false
+                                },
+                                {
+                                    "itemClassId": 12,
+                                    "itemClassName": "Shovels",
+                                    "selected": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

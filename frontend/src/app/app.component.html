@@ -1,0 +1,51 @@
+<div id="app">
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <!--<a href="#" class="navbar-brand">bezKoder</a> -->
+    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+      <li class="nav-item" *ngIf="isLoggedIn">
+        <a href="/dashboard" class="navbar-brand" routerLink="dashboard">Dashboard </a>
+      </li>
+      <li ngbDropdown class="nav-item dropdown" *ngIf="showAdminBoard">
+            <a ngbDropdownToggle href="/admin" class="navbar-brand" routerLink="admin">Admin</a>
+              <div ngbDropdownMenu class="dropdown-content">
+                <a class="dropdown-item" routerLink="/category">
+                  Category
+                </a>
+                <a class="dropdown-item" routerLink="/forcefactor">
+                  Force Factor
+                </a>
+              </div>
+      </li>
+      <!-- <li ngbDropdown class="nav-item dropdown">
+        <a ngbDropdownToggle class="nav-link dropdown-toggle" href="/admin" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" >Action</a>
+          <a class="dropdown-item" >Another action</a>
+          <a class="dropdown-item">Something else here</a>
+        </div>
+      </li> -->
+    </ul>
+
+    <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+      <!--<li class="nav-item">
+        <a href="/register" class="nav-link" routerLink="register">Sign Up</a>
+      </li>-->
+      <li class="nav-item">
+        <a href="/login" class="navbar-brand" routerLink="login">Login</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+      <li class="nav-item">
+        <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
+      </li>
+      <li class="nav-item">
+        <a href class="navbar-brand" (click)="logout()">LogOut</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

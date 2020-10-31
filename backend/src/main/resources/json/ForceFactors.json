@@ -1,0 +1,138 @@
+[
+	{
+		"recordId": 1,
+		"forceId": 1,
+		"forceName": "Margin",
+		"forceFactorId": 1,
+		"forceFactorName": "Price",
+		"forceFactorWeight": 1,
+		"render":true
+	},
+	{
+		"recordId": 2,
+		"forceId": 1,
+		"forceName": "Margin",
+		"forceFactorId": 2,
+		"forceFactorName": "Margin Rate",
+		"forceFactorWeight": 2,
+		"render":false
+	},
+	{
+		"recordId": 3,
+		"forceId": 1,
+		"forceName": "Margin",
+		"forceFactorId": 3,
+		"forceFactorName": "Store Revenue",
+		"forceFactorWeight": 3,
+		"render":false
+	},
+
+	{
+		"recordId": 4,
+		"forceId": 1,
+		"forceName": "Margin",
+		"forceFactorId": 4,
+		"forceFactorName": "Digital Revenue",
+		"forceFactorWeight": 4,
+		"render":false
+	},
+	{
+		"recordId": 1,
+		"forceId": 2,
+		"forceName": "Customer",
+		"forceFactorId": 1,
+		"forceFactorName": "Ratings/Revenue",
+		"forceFactorWeight": 1,
+		"render":true
+	},
+	{
+		"recordId": 2,
+		"forceId": 2,
+		"forceName": "Customer",
+		"forceFactorId": 2,
+		"forceFactorName": "Abandonment Rate",
+		"forceFactorWeight": 2,
+		"render":false
+	},
+	{
+		"recordId": 3,
+		"forceId": 2,
+		"forceName": "Customer",
+		"forceFactorId": 3,
+		"forceFactorName": "Q and A",
+		"forceFactorWeight": 3,
+		"render":false
+	},
+	{
+		"recordId": 1,
+		"forceId": 3,
+		"forceName": "Product",
+		"forceFactorId": 1,
+		"forceFactorName": "Complexity/Ambiguity",
+		"forceFactorWeight": 1,
+		"render":true
+	},
+	{
+		"recordId": 2,
+		"forceId": 3,
+		"forceName": "Product",
+		"forceFactorId": 2,
+		"forceFactorName": "Substitution",
+		"forceFactorWeight": 2,
+		"render":false
+	},
+	{
+		"recordId": 3,
+		"forceId": 3,
+		"forceName": "Product",
+		"forceFactorId": 3,
+		"forceFactorName": "Recency",
+		"forceFactorWeight": 3,
+		"render":false
+	},
+	{
+		"recordId": 4,
+		"forceId": 3,
+		"forceName": "Product",
+		"forceFactorId": 4,
+		"forceFactorName": "Content Availability",
+		"forceFactorWeight": 4,
+		"render":false
+	},
+	{
+		"recordId": 5,
+		"forceId": 3,
+		"forceName": "Product",
+		"forceFactorId": 5,
+		"forceFactorName": "Promo Frequency",
+		"forceFactorWeight": 5,
+		"render":false
+	},
+	{
+		"recordId": 6,
+		"forceId": 3,
+		"forceName": "Margin",
+		"forceFactorId": 6,
+		"forceFactorName": "Inventory Status",
+		"forceFactorWeight": 6,
+		"render":false
+	},
+	{
+		"recordId": 7,
+		"forceId": 3,
+		"forceName": "Margin",
+		"forceFactorId": 7,
+		"forceFactorName": "Inventory Status",
+		"forceFactorWeight": 7,
+		"render":false
+	},
+	{
+		"recordId": 8,
+		"forceId": 3,
+		"forceName": "Margin",
+		"forceFactorId": 8,
+		"forceFactorName": "Inventory Status",
+		"forceFactorWeight": 8,
+		"render":false
+	}
+]

@@ -1,0 +1,38 @@
+[
+        {
+            "recordId": 1,
+            "forceId": 1,
+            "forceName": "Margin",
+            "forceFactorId": 1,
+            "forceFactorName": "Price",
+            "forceFactorWeight": 1,
+            "render":true
+        },
+        {
+            "recordId": 2,
+            "forceName": "Margin",
+            "forceFactorId": 2,
+            "forceFactorName": "Margin Rate",
+            "forceFactorWeight": 2,
+            "render":false
+        },
+        {
+            "recordId": 3,
+            "forceId": 1,
+            "forceName": "Margin",
+            "forceFactorId": 3,
+            "forceFactorName": "Store Revenue",
+            "forceFactorWeight": 3,
+            "render":false
+        },
+       
+        {
+            "recordId": 4,
+            "forceId": 1,
+            "forceName": "Margin",
+            "forceFactorId": 4,
+            "forceFactorName": "Digital Revenue",
+            "forceFactorWeight": 4,
+            "render":false
+        }
+            ]

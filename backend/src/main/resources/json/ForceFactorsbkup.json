@@ -1,0 +1,102 @@
+{
+	"forceList" : [ {
+						"forceId" : 1,
+						"forceName" : "Margin",
+						"forceFactorList" : [ 
+							{ 
+							 "forceFactorId" : 1,	
+							 "forceFactorName" : "Price",
+							 "forceFactorWeight" : 9
+							},
+							{ 
+							 "forceFactorId" : 2,	
+							 "forceFactorName" : "Margin Rate",
+							 "forceFactorWeight" : 7
+							},
+							{ 
+							 "forceFactorId" : 3,	
+							 "forceFactorName" : "Store Revenue",
+							 "forceFactorWeight" : 7
+							},
+							{ 
+							 "forceFactorId" : 4,	
+							 "forceFactorName" : "Digital Revenue",
+							 "forceFactorWeight" : 7
+							}
+						  ]
+					},
+					{
+						"forceId" : 2,
+						"forceName" : "Customer",
+						"forceFactorList" : [ 
+							{ 
+							 "forceFactorId" : 5,	
+							 "forceFactorName" : "Rating Review",
+							 "forceFactorWeight" : 7
+							},
+							{ 
+							 "forceFactorId" : 6,	
+							 "forceFactorName" : "Abandonment Rate",
+							 "forceFactorWeight" : 7
+							},
+							{ 
+							 "forceFactorId" : 7,	
+							 "forceFactorName" : "Q&A",
+							 "forceFactorWeight" : 7
+							}
+						  ]
+					},
+					{
+						"forceId" : 3,
+						"forceName" : "Product",
+						"forceFactorList" : [ 
+							{ 
+							 "forceFactorId" : 8,	
+							 "forceFactorName" : "Complexcity Ambiguity",
+							 "forceFactorWeight" : 7
+							},
+							{ 
+							 "forceFactorId" : 9,	
+							 "forceFactorName" : "Susbtitution",
+							 "forceFactorWeight" : 7
+							},
+							{ 
+							 "forceFactorId" : 10,	
+							 "forceFactorName" : "Recency",
+							 "forceFactorWeight" : 7
+							},
+							{ 
+							 "forceFactorId" : 11,	
+							 "forceFactorName" : "Content Availability",
+							 "forceFactorWeight" : 7
+							}
+						  ]
+					},
+					{
+						"forceId" : 4,
+						"forceName" : "Competition",
+						"forceFactorList" : [ 
+							{ 
+							 "forceFactorId" : 12,	
+							 "forceFactorName" : "Promo Frequency",
+							 "forceFactorWeight" : 7
+							},
+							{ 
+							 "forceFactorId" : 13,	
+							 "forceFactorName" : "Inventory Status",
+							 "forceFactorWeight" : 7
+							},
+							{ 
+							 "forceFactorId" : 14,	
+							 "forceFactorName" : "Price Matching",
+							 "forceFactorWeight" : 4
+							},
+							{ 
+							 "forceFactorId" : 15,	
+							 "forceFactorName" : "Available",
+							 "forceFactorWeight" : 3
+							}
+						  ]
+					}
+				]	
+}

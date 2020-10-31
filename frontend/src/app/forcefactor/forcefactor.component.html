@@ -1,0 +1,72 @@
+<div>
+    <h3>
+      Configure Force Factor
+    </h3>
+    <input
+      type="text"
+      style="padding:8px;margin:15px auto;width:30%;"
+      placeholder="Type to filter by the Force Factor name column..."
+      (keyup)="updateFilter($event)"
+    />
+    <form (ngSubmit)="onSubmit()" #f="ngForm">
+    <ngx-datatable
+      #mydatatable
+      class="material"
+      [headerHeight]="50"
+      [limit]="5"
+      [columnMode]="ColumnMode.force"
+      [footerHeight]="50"
+      rowHeight="50"
+      [rows]="rows"
+      [rowClass]="getRowClass"
+      [scrollbarH]="true"
+    >
+      <ngx-datatable-column name="RecordId" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-row="row" let-value="value">
+            {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column name="ForceName" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-value="value"  let-row="row">
+            <div *ngIf="row.render"> {{ value}}</div>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column name="ForceFactorName" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-value="value">
+          {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column name="ForceFactorWeight" [width]="180" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+          
+        <span
+        title="Double click to edit"
+        (dblclick)="editing[rowIndex + '-forceFactorWeight'] = true"
+        *ngIf="!editing[rowIndex + '-forceFactorWeight']"
+      >
+        {{ value }}
+      </span>
+      <input
+        autofocus
+        (blur)="updateValue($event, 'forceFactorWeight', rowIndex)"
+        *ngIf="editing[rowIndex + '-forceFactorWeight']"
+        type="text"
+        [value]="value"
+      />
+        </ng-template>
+      </ngx-datatable-column>
+
+      </ngx-datatable>
+      <div>
+        <button  class="btn btn-primary" type="submit" value="SUBMIT">SUBMIT</button>
+      </div>
+      </form>
+  </div>
+
+
+
+
+

@@ -1,0 +1,109 @@
+<div>
+    <h3>
+      Welcome to Dashboard
+    </h3>
+    <input
+      type="text"
+      style="padding:8px;margin:15px auto;width:30%;"
+      placeholder="Type to filter by the Item name column..."
+      (keyup)="updateFilter($event)"
+    />
+    <form (ngSubmit)="onSubmit()" #f="ngForm">
+    <ngx-datatable
+      #mydatatable
+      class="material"
+      [headerHeight]="50"
+      [limit]="5"
+      [columnMode]="ColumnMode.force"
+      [footerHeight]="50"
+      rowHeight="50"
+      [rows]="rows"
+      [rowClass]="getRowClass"
+      [scrollbarH]="true"
+    >
+      <ngx-datatable-column name="ItemKey" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-row="row" let-value="value">
+            {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column name="ItemName" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-value="value">
+          {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column name="Department" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-value="value">
+          {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column name="Category" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-value="value">
+          {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column name="SubCategory" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-value="value">
+          {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="ItemClass" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-value="value">
+          {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column name="Cost" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-value="value">
+          {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="AbandonmentRate" [width]="200" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-value="value">
+          {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="Score" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-value="value">
+          {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="AdjustedScore" [width]="180" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-value="value">
+          {{ value}}
+        </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="Recommended" [width]="180" headerClass="table-header-cell">
+        <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+          
+        <span
+        title="Double click to edit"
+        (dblclick)="editing[rowIndex + '-recommended'] = true"
+        *ngIf="!editing[rowIndex + '-recommended']"
+      >
+        {{ value }}
+      </span>
+      <input
+        autofocus
+        (blur)="updateValue($event, 'recommended', rowIndex)"
+        *ngIf="editing[rowIndex + '-recommended']"
+        type="text"
+        [value]="value"
+      />
+        </ng-template>
+      </ngx-datatable-column>
+
+      </ngx-datatable>
+      <div >
+        <button  class="btn btn-primary" type="submit" value="SUBMIT">SUBMIT</button>
+      </div>
+      </form>
+  </div>
+
+
+
+
+

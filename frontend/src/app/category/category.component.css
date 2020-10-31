@@ -1,0 +1,28 @@
+.checkbox_with_margin {
+    margin-right: 2pt;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+ 
+.dep-table{
+  border-top-color: initial;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: initial;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: initial;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: initial;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
